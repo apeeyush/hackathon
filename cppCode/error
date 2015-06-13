@@ -1,0 +1,72 @@
+server.cpp:31:6: warning: unused parameter ‘p1’ [-Wunused-parameter]
+ bool sortpostion(position p1,position p2)
+      ^
+server.cpp:31:6: warning: unused parameter ‘p2’ [-Wunused-parameter]
+server.cpp:36:5: warning: unused parameter ‘pos1’ [-Wunused-parameter]
+ int GetDistance(position pos1,position pos2)
+     ^
+server.cpp:36:5: warning: unused parameter ‘pos2’ [-Wunused-parameter]
+server.cpp:163:18: warning: unused parameter ‘board’ [-Wunused-parameter]
+ vector<position> processor:: getValidMoves(state board)
+                  ^
+server.cpp: In function ‘void handle_play_call(mg_connection*)’:
+server.cpp:285:40: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+   char * s3 = strcat("{ \"m\": \"" , s1);
+                                        ^
+server.cpp: At global scope:
+server.cpp:231:20: warning: ‘s_no_cache_header’ defined but not used [-Wunused-variable]
+ static const char *s_no_cache_header =
+                    ^
+mongoose.c: In function ‘mg_url_decode’:
+mongoose.c:2506:27: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+   return i >= src_len ? j : -1;
+                           ^
+mongoose.c: In function ‘convert_uri_to_file_name’:
+mongoose.c:2713:56: warning: signed and unsigned type in conditional expression [-Wsign-compare]
+     size_t domain_len = colon == NULL ? strlen(domain) : colon - domain;
+                                                        ^
+/tmp/cckaiuFf.o: In function `printBoard(state)':
+/home/peeyush/hackathon/cppCode/server.cpp:94: undefined reference to `std::cout'
+/home/peeyush/hackathon/cppCode/server.cpp:94: undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/home/peeyush/hackathon/cppCode/server.cpp:94: undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)'
+/home/peeyush/hackathon/cppCode/server.cpp:96: undefined reference to `std::basic_ostream<char, std::char_traits<char> >& std::endl<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&)'
+/home/peeyush/hackathon/cppCode/server.cpp:96: undefined reference to `std::cout'
+/home/peeyush/hackathon/cppCode/server.cpp:96: undefined reference to `std::ostream::operator<<(std::ostream& (*)(std::ostream&))'
+/tmp/cckaiuFf.o: In function `__static_initialization_and_destruction_0':
+/usr/include/c++/4.8/iostream:74: undefined reference to `std::ios_base::Init::Init()'
+/usr/include/c++/4.8/iostream:74: undefined reference to `std::ios_base::Init::~Init()'
+/tmp/cckaiuFf.o: In function `processor::boardInitialise(position, position, int)':
+/home/peeyush/hackathon/cppCode/server.cpp:71: undefined reference to `operator new(unsigned long)'
+/home/peeyush/hackathon/cppCode/server.cpp:71: undefined reference to `operator delete(void*)'
+/tmp/cckaiuFf.o: In function `std::vector<std::vector<bool, std::allocator<bool> >, std::allocator<std::vector<bool, std::allocator<bool> > > >::_M_range_check(unsigned long) const':
+/usr/include/c++/4.8/bits/stl_vector.h:794: undefined reference to `std::__throw_out_of_range(char const*)'
+/tmp/cckaiuFf.o: In function `std::vector<bool, std::allocator<bool> >::_M_range_check(unsigned long) const':
+/usr/include/c++/4.8/bits/stl_bvector.h:780: undefined reference to `std::__throw_out_of_range(char const*)'
+/tmp/cckaiuFf.o: In function `std::vector<position, std::allocator<position> >::_M_insert_aux(__gnu_cxx::__normal_iterator<position*, std::vector<position, std::allocator<position> > >, position const&)':
+/usr/include/c++/4.8/bits/vector.tcc:374: undefined reference to `__cxa_end_catch'
+/usr/include/c++/4.8/bits/vector.tcc:374: undefined reference to `__cxa_begin_catch'
+/usr/include/c++/4.8/bits/vector.tcc:382: undefined reference to `__cxa_rethrow'
+/tmp/cckaiuFf.o: In function `std::vector<position, std::allocator<position> >::_M_check_len(unsigned long, char const*) const':
+/usr/include/c++/4.8/bits/stl_vector.h:1339: undefined reference to `std::__throw_length_error(char const*)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long)':
+/usr/include/c++/4.8/ext/new_allocator.h:110: undefined reference to `operator delete(void*)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<unsigned long>::allocate(unsigned long, void const*)':
+/usr/include/c++/4.8/ext/new_allocator.h:102: undefined reference to `std::__throw_bad_alloc()'
+/usr/include/c++/4.8/ext/new_allocator.h:104: undefined reference to `operator new(unsigned long)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<std::vector<bool, std::allocator<bool> > >::deallocate(std::vector<bool, std::allocator<bool> >*, unsigned long)':
+/usr/include/c++/4.8/ext/new_allocator.h:110: undefined reference to `operator delete(void*)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<position>::deallocate(position*, unsigned long)':
+/usr/include/c++/4.8/ext/new_allocator.h:110: undefined reference to `operator delete(void*)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<position>::allocate(unsigned long, void const*)':
+/usr/include/c++/4.8/ext/new_allocator.h:102: undefined reference to `std::__throw_bad_alloc()'
+/usr/include/c++/4.8/ext/new_allocator.h:104: undefined reference to `operator new(unsigned long)'
+/tmp/cckaiuFf.o: In function `__gnu_cxx::new_allocator<std::vector<bool, std::allocator<bool> > >::allocate(unsigned long, void const*)':
+/usr/include/c++/4.8/ext/new_allocator.h:102: undefined reference to `std::__throw_bad_alloc()'
+/usr/include/c++/4.8/ext/new_allocator.h:104: undefined reference to `operator new(unsigned long)'
+/tmp/cckaiuFf.o: In function `void std::__uninitialized_fill_n<false>::__uninit_fill_n<std::vector<bool, std::allocator<bool> >*, unsigned long, std::vector<bool, std::allocator<bool> > >(std::vector<bool, std::allocator<bool> >*, unsigned long, std::vector<bool, std::allocator<bool> > const&)':
+/usr/include/c++/4.8/bits/stl_uninitialized.h:189: undefined reference to `__cxa_end_catch'
+/usr/include/c++/4.8/bits/stl_uninitialized.h:189: undefined reference to `__cxa_begin_catch'
+/usr/include/c++/4.8/bits/stl_uninitialized.h:192: undefined reference to `__cxa_rethrow'
+/tmp/cckaiuFf.o:(.eh_frame+0x34f): undefined reference to `__gxx_personality_v0'
+collect2: error: ld returned 1 exit status
+make: *** [server] Error 1
